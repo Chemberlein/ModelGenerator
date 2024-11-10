@@ -1,0 +1,98 @@
+[gd_scene load_steps=6 format=3 uid="uid://d2daep8tf4wpy"]
+
+[ext_resource type="Texture2D" uid="uid://dm1n6uanjlbae" path="res://assets/icons/logoSmall.png" id="1_8fm0c"]
+[ext_resource type="Texture2D" uid="uid://c2gig80xrun6a" path="res://assets/icons/menuClosed.png" id="2_vq7la"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_40bwx"]
+sky_top_color = Color(0.352941, 0.47451, 0.541176, 1)
+sky_horizon_color = Color(1, 0.980392, 1, 1)
+ground_bottom_color = Color(0.352941, 0.47451, 0.541176, 1)
+ground_horizon_color = Color(1, 0.980392, 1, 1)
+
+[sub_resource type="Sky" id="Sky_54eue"]
+sky_material = SubResource("ProceduralSkyMaterial_40bwx")
+
+[sub_resource type="Environment" id="Environment_kmnkk"]
+background_mode = 2
+sky = SubResource("Sky_54eue")
+
+[node name="Node3D" type="Node3D"]
+
+[node name="CoreApp" type="CoreApp" parent="."]
+
+[node name="@SkyBox@17285" type="SkyBox" parent="CoreApp"]
+environment = SubResource("Environment_kmnkk")
+
+[node name="@CanvasLayer@17286" type="CanvasLayer" parent="CoreApp"]
+
+[node name="@SideMenu@17287" type="SideMenu" parent="CoreApp/@CanvasLayer@17286"]
+
+[node name="@Timer@17288" type="Timer" parent="CoreApp/@CanvasLayer@17286/@SideMenu@17287"]
+wait_time = 0.016
+
+[node name="@PanelContainer@17298" type="PanelContainer" parent="CoreApp/@CanvasLayer@17286/@SideMenu@17287"]
+layout_mode = 0
+offset_left = -510.0
+offset_bottom = 452.0
+
+[node name="@VBoxContainer@17299" type="VBoxContainer" parent="CoreApp/@CanvasLayer@17286/@SideMenu@17287/@PanelContainer@17298"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="@TextureRect@17300" type="TextureRect" parent="CoreApp/@CanvasLayer@17286/@SideMenu@17287/@PanelContainer@17298/@VBoxContainer@17299"]
+layout_mode = 2
+texture = ExtResource("1_8fm0c")
+
+[node name="@HBoxContainer@17301" type="HBoxContainer" parent="CoreApp/@CanvasLayer@17286/@SideMenu@17287/@PanelContainer@17298/@VBoxContainer@17299"]
+layout_mode = 2
+size_flags_horizontal = 3
+alignment = 1
+
+[node name="@CButton@17302" type="CButton" parent="CoreApp/@CanvasLayer@17286/@SideMenu@17287/@PanelContainer@17298/@VBoxContainer@17299/@HBoxContainer@17301"]
+layout_mode = 2
+text = "Home"
+
+[node name="@CButton@17303" type="CButton" parent="CoreApp/@CanvasLayer@17286/@SideMenu@17287/@PanelContainer@17298/@VBoxContainer@17299/@HBoxContainer@17301"]
+layout_mode = 2
+text = "Models"
+
+[node name="@CustomSection@17304" type="CustomSection" parent="CoreApp/@CanvasLayer@17286/@SideMenu@17287/@PanelContainer@17298/@VBoxContainer@17299"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="@HBoxContainer@17314" type="HBoxContainer" parent="CoreApp/@CanvasLayer@17286/@SideMenu@17287/@PanelContainer@17298/@VBoxContainer@17299"]
+layout_mode = 2
+size_flags_horizontal = 3
+alignment = 2
+
+[node name="@CButton@17315" type="CButton" parent="CoreApp/@CanvasLayer@17286/@SideMenu@17287/@PanelContainer@17298/@VBoxContainer@17299/@HBoxContainer@17314"]
+layout_mode = 2
+text = "Controls"
+
+[node name="@CButton@17316" type="CButton" parent="CoreApp/@CanvasLayer@17286/@SideMenu@17287/@PanelContainer@17298/@VBoxContainer@17299/@HBoxContainer@17314"]
+layout_mode = 2
+text = "About"
+
+[node name="@Button@17317" type="Button" parent="CoreApp/@CanvasLayer@17286/@SideMenu@17287"]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 5.0
+offset_right = 84.0
+offset_bottom = 36.0
+text = "Menu"
+icon = ExtResource("2_vq7la")
+
+[node name="@ModelOverviewCamera@17318" type="ModelOverviewCamera" parent="CoreApp"]
+transform = Transform3D(1, 0, 0, 0, 0.848048, 0.529919, 0, -0.529919, 0.848048, 0, 0, 0)
+
+[node name="@Node3D@17319" type="Node3D" parent="CoreApp/@ModelOverviewCamera@17318"]
+
+[node name="@Camera3D@17320" type="Camera3D" parent="CoreApp/@ModelOverviewCamera@17318/@Node3D@17319"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 200)
+
+[node name="@DirectionalLight3D@17321" type="DirectionalLight3D" parent="CoreApp/@ModelOverviewCamera@17318/@Node3D@17319"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 200)
+
+[node name="@Node3D@17322" type="Node3D" parent="CoreApp"]

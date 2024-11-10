@@ -1,0 +1,45 @@
+{
+	"containerConfiguration": {
+		"type": "group",
+		"title": "Laptop holder configuration",
+		"items": [
+			{
+				"type": "labeledInputBox",
+				"text": "Side width",
+				"trigger": "laptopHolderSideWidth",
+				"value": "20"
+			},
+			{
+				"type": "labeledInputBox",
+				"text": "Height",
+				"trigger": "laptopHolderHeight",
+				"value": "30"
+			},
+			{
+				"type": "labeledInputBox",
+				"text": "Length",
+				"trigger": "laptopHolderLength",
+				"value": "150"
+			},
+			{
+				"type": "labeledInputBox",
+				"text": "Laptop width",
+				"trigger": "laptopHolderLaptopWidth",
+				"value": "20"
+			},
+			{
+				"type": "labeledInputBox",
+				"text": "Corner radius",
+				"trigger": "laptopHolderCornerRadius",
+				"value": "5"
+			},
+			{
+				"type": "labeledInputBox",
+				"text": "Space from table",
+				"trigger": "laptopHolderSpaceFromTable",
+				"value": "5"
+			}
+
+		]
+	}
+}

@@ -1,0 +1,36 @@
+env = SConscript('godot-cpp/SConstruct')
+env.Append(CPPDEFINES=["PC", "LINUX", "X86_64", "TEMPLATE_RELEASE"])
+env.Append(CPPPATH = "src/")
+env.Append(CPPPATH = "src/models")
+env.Append(CPPPATH = "src/models/container")
+env.Append(CPPPATH = "src/models/laptopholder")
+env.Append(CPPPATH = "src/core/")
+env.Append(CPPPATH = "src/core/ctrl")
+#env.Append(CPPPATH = "src/core/elements")
+env.Append(CPPPATH = "src/core/elements/camera")
+env.Append(CPPPATH = "src/core/elements/objects")
+env.Append(CPPPATH = "src/core/elements/ui")
+env.Append(CPPPATH = "src/core/elements/environment")
+
+src = Glob("src/*.cpp")
+src = src + Glob("src/core/*.cpp")
+src = src + Glob("src/models/*.cpp")
+src = src + Glob("src/models/container/*.cpp")
+src = src + Glob("src/models/laptopholder/*.cpp")
+src = src + Glob("src/core/ctrl/*.cpp")
+#src = src + Glob("src/core/elements/*.cpp")
+src = src + Glob("src/core/elements/camera/*.cpp")
+src = src + Glob("src/core/elements/objects/cModel.cpp")
+src = src + Glob("src/core/elements/ui/*.cpp")
+src = src + Glob("src/core/elements/environment/*.cpp")
+
+if env['platform'] == 'linux':
+    env['shared_library'] = True
+    env['build_as_shared_library'] = True
+    libpath = '../libtest{}{}'.format( env['suffix'], env['SHLIBSUFFIX'] )
+    sharedlib = env.SharedLibrary(libpath, src)
+    Default(sharedlib)
+elif env['platform'] == 'windows':
+    pass
+elif env['platform'] == 'android':
+    pass

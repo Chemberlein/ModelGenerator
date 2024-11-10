@@ -1,0 +1,22 @@
+{
+	"listOfModels": {
+		"type": "group",
+		"title": "Models:",
+		"items": [
+			{
+				"type": "modelCard",
+				"title": "Container",
+				"description": "Container with tight lid",
+				"img": "res://gdextension/src/models/container/preview.png",
+				"trigger": "containerSelected"
+			},
+			{
+				"type": "modelCard",
+				"title": "Laptop Holder",
+				"description": "Vertical laptop holder",
+				"img": "res://gdextension/src/models/laptopholder/preview.png",
+				"trigger": "laptopholderSelected"
+			}
+		]
+	}
+}

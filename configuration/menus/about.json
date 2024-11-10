@@ -1,0 +1,12 @@
+{
+	"about": {
+		"type": "group",
+		"title": "About",
+		"items": [
+			{
+				"type": "text",
+				"text": "This application is my side project. My aim is to create set of models, that could be configured for personal needs. Hopefuly you find this application useful."
+			}
+		]
+	}
+}

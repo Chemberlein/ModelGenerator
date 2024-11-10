@@ -1,0 +1,16 @@
+{
+	"listOfShortcuts": {
+		"type": "group",
+		"title": "Controls",
+		"items": [
+			{
+				"type": "text",
+				"text": "Push down right mouse button + move cursor to look around object."
+			},
+			{
+				"type": "text",
+				"text": "Push down right mouse button + use scroll wheel to zoom in or zoom out."
+			}
+		]
+	}
+}

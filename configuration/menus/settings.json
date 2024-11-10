@@ -1,0 +1,28 @@
+{
+	"listOfSettings": {
+		"type": "group",
+		"title": "Here will be settings",
+		"items": [
+			{
+				"type": "labeledInputBox",
+				"text": "set up something",
+				"trigger": "padding"
+			},
+			{
+				"type": "labeledSpinBox",
+				"text": "set up something",
+				"trigger": "paddingsdf"
+			},
+			{
+				"type": "labeledInputBox",
+				"text": "set up something",
+				"trigger": "padding"
+			},
+			{
+				"type": "labeledSpinBox",
+				"text": "set up something",
+				"trigger": "paddingsdf"
+			}
+		]
+	}
+}

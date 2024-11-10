@@ -1,0 +1,51 @@
+{
+	"containerConfiguration": {
+		"type": "group",
+		"title": "Container configuration",
+		"items": [
+			{
+				"type": "labeledInputBox",
+				"text": "Width",
+				"trigger": "containerWidth",
+				"value": "30"
+			},
+			{
+				"type": "labeledInputBox",
+				"text": "Height",
+				"trigger": "containerHeight",
+				"value": "30"
+			},
+			{
+				"type": "labeledInputBox",
+				"text": "Depth",
+				"trigger": "containerDepth",
+				"value": "30"
+			},
+			{
+				"type": "labeledInputBox",
+				"text": "Container wall width",
+				"trigger": "containerWallWidth",
+				"value": "2"
+			},
+			{
+				"type": "labeledInputBox",
+				"text": "Lid wall overlap",
+				"trigger": "lidWallOverlap",
+				"value": "2"
+			},
+			{
+				"type": "labeledInputBox",
+				"text": "Outside corner radius",
+				"trigger": "outsideCornerRadius",
+				"value": "5"
+			},
+			{
+				"type": "labeledInputBox",
+				"text": "Inner corner radius",
+				"trigger": "innerCornerRadius",
+				"value": "3"
+			}
+
+		]
+	}
+}

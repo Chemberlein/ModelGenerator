@@ -1,0 +1,33 @@
+TODO plan
+* DONE change menu icon to smaller one
+* DONE Add ctrl singleton
+* DONE change button to custom one
+* DONE Add configuration menu
+* TODO add model card (to choose model in main menu)
+* DONE elements to create model configuration
+* TODO Make class for button that will show text on hover
+* TODO Start to add Models
+* DONE Add Theme
+* DONE Again should probably re visit later Edit theme
+* DONE Choose color scheme '/home/sk/Downloads/cs.png'
+* DONE Should revisit this think tho MEMORY SAFETY
+* DONE Make side menu button work
+* DONE Try some kind of world envirenment
+* DONE Add Camera
+* DONE Add camera control
+* TODO Figure out new memory leak Should look in it but fine for now
+* DONE Limit size of side bar the porblem solved by label wrap
+* DONE Add text Section
+* DONE Edit theme to separate Label and RichLabelText
+* DONE Add cube model
+* TODO Somehow separate labels
+* DONE Add toggle switch element to custom section
+* TODO Add section accordion to custom section
+* DONE Add drop down to custom section elements
+* TODO Remove useless includes
+* DONE Fix errors
+* DONE highlight input fields
+* DONE Make elements in custom section have good alignment(space between)
+* TODO Add colapse element into custom section
+* DONE Add separation of the section label and separation of the section
+* TODO Fix non mainfold edges in the model / fis mesh

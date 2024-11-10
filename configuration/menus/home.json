@@ -1,0 +1,19 @@
+{
+	"saveAndExport": {
+		"type": "group",
+		"title": "Export",
+		"items": [
+			{
+				"type": "labeledInputBox",
+				"text": "Output directory(use absolute path)",
+				"trigger": "outputDirectoryPath",
+				"value": "user://"
+			},
+			{
+				"type": "button",
+				"text": "Export as stl",
+				"trigger": "exportAsStl"
+			}	
+		]
+	}
+}
